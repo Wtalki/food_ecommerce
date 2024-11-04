@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    a{
+    }
+}
+
+@layer components{
+    .menu-button{
+        @apply text-white bg-blue-500 p-3;
+    }
+}
+
+@layer utilities{
+    .text-orange-500{
+        color: blue;
+    }
+}

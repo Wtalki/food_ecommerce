@@ -1,0 +1,2531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwind</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+    </head>
+    <body class="bg-gray-200">
+        <header class="px-5">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <!-- lg+ -->
+                <nav class="flex items-center justify-between h-16 lg:h-20">
+                    <div class="flex-shrink-0">
+                        <a href="#" title
+                            class="flex items-center text-3xl font-semibold">
+                            <svg
+                                class="w-auto h-8 lg:h-10"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                color="#000000"
+                                fill="none">
+                                <path
+                                    d="M18.2505 10.5H19.6403C21.4918 10.5 22.0421 10.7655 21.9975 12.0838C21.9237 14.2674 20.939 16.8047 17 17.5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path
+                                    d="M5.94627 20.6145C2.57185 18.02 2.07468 14.3401 2.00143 10.5001C1.96979 8.8413 2.45126 8.5 4.65919 8.5H15.3408C17.5487 8.5 18.0302 8.8413 17.9986 10.5001C17.9253 14.3401 17.4281 18.02 14.0537 20.6145C13.0934 21.3528 12.2831 21.5 10.9194 21.5H9.08064C7.71686 21.5 6.90658 21.3528 5.94627 20.6145Z"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path
+                                    d="M11.3089 2.5C10.7622 2.83861 10.0012 4 10.0012 5.5M7.53971 4C7.53971 4 7 4.5 7 5.5M14.0012 4C13.7279 4.1693 13.5 5 13.5 5.5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Foodo
+                        </a>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="inline-flex p-2 text-black transition-all duration-200 rounded-md md:hidden focus:bg-gray-800 hover:bg-gray-800">
+                        <svg
+                            class="w-6 h-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+
+                    <div class="hidden md:flex md:items-center md:space-x-10">
+                        <a
+                            href="#"
+                            title
+                            class="text-sm font-medium text-black transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70">
+                            Features
+                        </a>
+
+                        <a
+                            href="#"
+                            title
+                            class="text-sm font-medium text-black transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70">
+                            Solutions
+                        </a>
+
+                        <a
+                            href="#"
+                            title
+                            class="text-sm font-medium text-black transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70">
+                            Resources
+                        </a>
+
+                        <a
+                            href="#"
+                            title
+                            class="text-sm font-medium text-black transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70">
+                            Pricing
+                        </a>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <button class="bg-sky-950 p-3 rounded-full">
+                            <svg
+                                class="text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                color="#000000"
+                                fill="none">
+                                <path
+                                    d="M8 16L16.7201 15.2733C19.4486 15.046 20.0611 14.45 20.3635 11.7289L21 6"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path
+                                    d="M6 6L7.5 6M22 6H19"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path
+                                    d="M10.5 7C10.5 7 11.5 7 12.5 9C12.5 9 15.6765 4 18.5 3"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <circle
+                                    cx="6"
+                                    cy="20"
+                                    r="2"
+                                    stroke="currentColor"
+                                    stroke-width="1.5" />
+                                <circle
+                                    cx="17"
+                                    cy="20"
+                                    r="2"
+                                    stroke="currentColor"
+                                    stroke-width="1.5" />
+                                <path
+                                    d="M8 20L15 20"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path
+                                    d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <button class="bg-sky-950 p-3 rounded-full">
+                            <svg
+                                class="text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                color="#000000"
+                                fill="none">
+                                <path
+                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+
+            </div>
+        </header>
+        <div>
+            <section>
+                <div
+                    class="px-5 mx-auto max-w-6xl max-h-max py-10 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-50 to-slate-700 rounded-2xl">
+                    <div
+                        class="grid items-center grid-cols-1  gap-5 lg:grid-cols-2">
+                        <div class="mt-16 text-center lg:text-start ">
+                            <p class="uppercase text-gray-700 mb-3 text-center lg:text-start">
+                                exploring the delocious world
+                            </p>
+                            <h1
+                                class="text-3xl font-bold uppercase  text-black sm:text-4xl text-2xl">
+                                Food that make you <br />
+                                you happy and <br />
+                                <div class="relative inline-flex">
+                                    <span
+                                        class="absolute inset-x-0 bottom-0 border-b-[30px] border-[#4ADE80]"></span>
+                                    <h1
+                                        class="relative text-4xl font-bold text-black sm:text-4xl lg:text-5xl">
+                                        Healthy.
+                                    </h1>
+                                </div>
+                            </h1>
+
+                            <div class=" flex justify-center lg:flex-col">
+                                <div
+                                class="flex bg-white max-w-96 py-3 px-5 rounded-full mt-6 justify-center items-center shadow-lg shadow-slate-600">
+                                <input
+                                    type="text"
+                                    placeholder="Search... "
+                                    class="border-b ring-transparent outline-none w-full text-cyan-800" />
+
+                                <label for><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#000000"
+                                        fill="none">
+                                        <path
+                                            d="M17.5 17.5L22 22"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linejoin="round" /></svg></label>
+                            </div>
+                            </div>
+                            <div class="flex gap-10 items-center mt-2 sm:mt-5 justify-center sm:flex-row flex-col lg:justify-start">
+                                <button
+                                    class="bg-cyan-950 rounded-2xl py-3 px-5 items-center rounded-br-none flex gap-10 text-white font-semibold tranision-all duration-200 hover:bg-cyan-800 shadow-lg shadow-slate-600">
+                                    <a href="#" class="text-xs"> Book A Table
+                                    </a><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#ffffff"
+                                        fill="none">
+                                        <path
+                                            d="M20.0001 11.9998L4.00012 11.9998"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <button
+                                    class="bg-cyan-800 rounded-2xl py-3 px-5 rounded-br-none flex gap-10 text-white items-center font-semibold tranision-all duration-200 hover:bg-cyan-700 shadow-lg shadow-slate-600">
+                                    <a href="#" class="text-xs"> View Menu
+                                    </a><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#ffffff"
+                                        fill="none">
+                                        <path
+                                            d="M20.0001 11.9998L4.00012 11.9998"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                           <div class="flex justify-center lg:flex-col">
+                                <div
+                                class="bg-gradient-to-r from-gray-950 to-cyan-800 py-5 px-5 mt-5 rounded-bl-[60px] w-fit rounded-t-xl rounded-tr-[50px] shadow-lg shadow-slate-600 ">
+                                <div class="flex flex-col justify-center">
+                                    <div
+                                        class="flex justify-between gap-24 mb-5">
+                                        <h3
+                                            class="uppercase text-white font-light">EGG
+                                            Ramen</h3>
+                                        <div class="flex items-center">
+                                            <span><img
+                                                    src="./images/star-stroke-rounded.svg"
+                                                    alt /></span>
+                                            <span><img
+                                                    src="./images/star-stroke-rounded.svg"
+                                                    alt /></span>
+                                            <span><img
+                                                    src="./images/star-stroke-rounded.svg"
+                                                    alt /></span>
+                                            <span><img
+                                                    src="./images/star-stroke-rounded.svg"
+                                                    alt /></span>
+                                            <span><img
+                                                    src="./images/star-stroke-rounded.svg"
+                                                    alt /></span>
+                                        </div>
+                                    </div>
+                                    <hr
+                                        class="w-full border border-cyan-600 text-yellow-50" />
+                                    <div class="flex mt-5 gap-5">
+                                        <div class="sm:w-44 w-32 sm:h-28 h-24">
+                                            <img
+                                                src="./images/cook.jpg"
+                                                class="sm:w-44 w-32 sm:h-28 h-24 bg-fixed bg-cover rounded-lg rounded-bl-[40px]"
+                                                alt />
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-between">
+                                            <p
+                                                class="text-end text-white font-semibold gap-6">
+                                                $20.0
+                                            </p>
+                                            <div
+                                                class="flex items-end justify-between gap-10">
+                                                <div>
+                                                    <p
+                                                        class="font-semibold text-white text-sm tracking-wider">
+                                                        Doni Belbon
+                                                    </p>
+                                                    <span
+                                                        class="text-gray-500 text-sm">Master
+                                                        Chef</span>
+                                                </div>
+                                                <button
+                                                    class="bg-[#fcfcfc] p-4 rounded-full cursor-pointer transition-all duration-200 hover:bg-[#d3d3d3]">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 24 24"
+                                                        width="24"
+                                                        height="24"
+                                                        color="#000000"
+                                                        fill="none">
+                                                        <path
+                                                            d="M8 16L16.7201 15.2733C19.4486 15.046 20.0611 14.45 20.3635 11.7289L21 6"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path
+                                                            d="M6 6H22"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <circle
+                                                            cx="6"
+                                                            cy="20"
+                                                            r="2"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5" />
+                                                        <circle
+                                                            cx="17"
+                                                            cy="20"
+                                                            r="2"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5" />
+                                                        <path
+                                                            d="M8 20L15 20"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                        <path
+                                                            d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18"
+                                                            stroke="currentColor"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                        <div class="text-center lg:text-start">
+                            <img
+                                class=" "
+                                src="./images/Delicious Pizza Creative Photography, Pizza, Pizza Photography, Delicious Pizza PNG Transparent Image and Clipart for Free Download-Photoroom.png"
+                                alt />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="py-10 px-20">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+                <div
+                    class="flex justify-center py-5 px-3 items-center gap-5 sm:border border-r-gray-500">
+                    <div
+                        class="w-20 h-20 bg-gray-400 flex items-center justify-center rounded-full">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="25"
+                            height="25"
+                            color="#ffffff"
+                            fill="none">
+                            <path
+                                d="M7.83152 21.3478L7.31312 20.6576C6.85764 20.0511 5.89044 20.1 5.50569 20.7488C4.96572 21.6595 3.5 21.2966 3.5 20.2523V3.74775C3.5 2.7034 4.96572 2.3405 5.50569 3.25115C5.89044 3.90003 6.85764 3.94888 7.31312 3.34244L7.83152 2.65222C8.48467 1.78259 9.84866 1.78259 10.5018 2.65222L10.5833 2.76076C11.2764 3.68348 12.7236 3.68348 13.4167 2.76076L13.4982 2.65222C14.1513 1.78259 15.5153 1.78259 16.1685 2.65222L16.6869 3.34244C17.1424 3.94888 18.1096 3.90003 18.4943 3.25115C19.0343 2.3405 20.5 2.7034 20.5 3.74774V20.2523C20.5 21.2966 19.0343 21.6595 18.4943 20.7488C18.1096 20.1 17.1424 20.0511 16.6869 20.6576L16.1685 21.3478C15.5153 22.2174 14.1513 22.2174 13.4982 21.3478L13.4167 21.2392C12.7236 20.3165 11.2764 20.3165 10.5833 21.2392L10.5018 21.3478C9.84866 22.2174 8.48467 22.2174 7.83152 21.3478Z"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M15 9L9 15"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M15 15H14.991M9.00897 9H9"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col w-44">
+                        <h2 class="text-1xl font-semibold text-gray-800">
+                            Discount voucher
+                        </h2>
+                        <p class="text-sm font-light text-gray-500">
+                            Lorem ipsum dolor siLorem ipsum dolor siLorem ipsum
+                            dolor sit
+                            amet.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex justify-center py-5 px-3 items-center gap-5 sm:border border-r-gray-500">
+                    <div
+                        class="w-20 h-20 bg-gray-400 flex items-center justify-center rounded-full">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="25"
+                            height="25"
+                            color="#ffffff"
+                            fill="none">
+                            <path
+                                d="M10.2201 18.821L18.6793 13.1312C20.1246 12.159 20.8472 11.673 20.9785 10.7879C21.1098 9.90283 20.6352 9.30806 19.686 8.11852C17.5076 5.3886 14.548 3.35345 11.1624 2.38141C9.87428 2.01158 9.23023 1.82667 8.53978 2.2186C7.84933 2.61053 7.62404 3.37564 7.17348 4.90586L4.40648 14.3032C3.11201 18.6995 2.46477 20.8977 3.54764 21.7392C4.63051 22.5807 6.49371 21.3275 10.2201 18.821Z"
+                                stroke="currentColor"
+                                stroke-width="1.5" />
+                            <path
+                                d="M7.5 5C7.5 5 8.03795 5.1182 8.90014 5.38146C11.6322 6.21565 14.0691 7.83278 16 10.0001"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path
+                                d="M13.008 11H12.999"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M6.28309 7.95361C7.35896 8.24857 8.04372 9.23191 8.04372 10.4269C8.04372 12.0941 6.42377 13.3683 4.82373 12.9138"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path
+                                d="M8.22322 18.7485C7.67104 17.7792 7.8218 16.508 8.66679 15.663C9.67553 14.6543 11.2917 14.6349 12.2765 15.6198C12.4419 15.7852 12.579 15.9684 12.6879 16.1636"
+                                stroke="currentColor"
+                                stroke-linecap="round" />
+                            <path
+                                d="M12.9235 16.9933C12.6273 15.8482 11.6587 15.0087 10.5096 15.0087C9.12491 15.0087 8.00244 16.2275 8.00244 17.731C8.00244 18.5276 8.31752 19.2442 8.81972 19.7421"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col w-44">
+                        <h2 class="text-1xl font-semibold text-gray-800">
+                            Discount voucher
+                        </h2>
+                        <p class="text-sm font-light text-gray-500">
+                            Lorem ipsum dolor siLorem ipsum dolor siLorem ipsum
+                            dolor sit
+                            amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center py-5 px-3 items-center gap-5">
+                    <div
+                        class="w-20 h-20 bg-gray-400 flex items-center justify-center rounded-full">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="25"
+                            height="25"
+                            color="#ffffff"
+                            fill="none">
+                            <path
+                                d="M17 13.2308C17 13.2308 16.0909 12.7693 15.1818 12.7693C13.8182 12.7693 12 14.6154 12 17.3846C12 20.1537 14.4896 22 17 22C19.5104 22 22 20.1537 22 17.3846C22 14.6154 20.1818 12.7693 18.8182 12.7693C17.9091 12.7693 17 13.2308 17 13.2308ZM17 13.2308C17 11.8462 17.9091 10 19.7273 10"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M10.655 5C11.5512 5 12.2778 4.32843 12.2778 3.5C12.2778 2.67157 11.5512 2 10.655 2H5.24561C4.34936 2 3.6228 2.67157 3.6228 3.5C3.6228 4.32843 4.34936 5 5.24561 5M11.1693 4.92311C12.1247 6.68943 12.9095 8.28337 13.3888 10C13.4279 10.1401 13.465 10.281 13.5 10.4229M10.428 22H6.32748C2.74721 22 2 21.3093 2 18V13.7771C2 10.3773 3.09757 7.88562 4.70467 4.91465"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="flex flex-col w-44">
+                        <h2 class="text-1xl font-semibold text-gray-800">
+                            Discount voucher
+                        </h2>
+                        <p class="text-sm font-light text-gray-500">
+                            Lorem ipsum dolor siLorem ipsum dolor siLorem ipsum
+                            dolor sit
+                            amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-24 px-24">
+            <div class="flex justify-center flex-col lg:flex-row items-center gap-20 py-5">
+                <div class="flex justify-center flex-col sm:flex-row items-center gap-5 mt-5">
+                    <div
+                        class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-56 h-46 shadow-xl transition-all duration-200 hover:shadow-2xl">
+                        <img
+                            class="absolute bottom-4 right-1 transition-all duration-200 hover:bottom-5"
+                            src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                            alt />
+                        <div class="flex mt-12 justify-center items-center">
+                            <div>
+                                <h2 class="text-md font-bold">Kidney bean
+                                    curry</h2>
+                                <span class="text-xs text-gray-500">Lorem ipsum
+                                    dolorLorem ipsum dolor sit.</span>
+                                <p class="text-black font-bold mt-3">$30.0</p>
+                            </div>
+                            <button
+                                class="relative bottom-10 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#ffffff"
+                                    fill="none">
+                                    <path
+                                        d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <a
+                                href="#"
+                                class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-40 right-0 shadow-sm transition-all duration-200 hover:shadow-xl rounded-bl-3xl rounded-br-none">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#ffffff"
+                                    fill="none">
+                                    <path
+                                        d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle
+                                        cx="10.5"
+                                        cy="20.5"
+                                        r="1.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <circle
+                                        cx="17.5"
+                                        cy="20.5"
+                                        r="1.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sm:mt-0 mt-32">
+                        <div
+                        class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-56 h-46 shadow-xl transition-all duration-200 hover:shadow-2xl">
+                        <img
+                            class="absolute bottom-4 right-1 transition-all duration-200 hover:bottom-5"
+                            src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                            alt />
+                        <div class="flex mt-12 justify-center items-center">
+                            <div>
+                                <h2 class="text-md font-bold">Kidney bean
+                                    curry</h2>
+                                <span class="text-xs text-gray-500">Lorem ipsum
+                                    dolorLorem ipsum dolor sit.</span>
+                                <p class="text-black font-bold mt-3">$30.0</p>
+                            </div>
+                            <button
+                                class="relative bottom-10 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#ffffff"
+                                    fill="none">
+                                    <path
+                                        d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <a
+                                href="#"
+                                class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-40 right-0 shadow-sm transition-all duration-200 hover:shadow-xl rounded-bl-3xl rounded-br-none">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#ffffff"
+                                    fill="none">
+                                    <path
+                                        d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle
+                                        cx="10.5"
+                                        cy="20.5"
+                                        r="1.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <circle
+                                        cx="17.5"
+                                        cy="20.5"
+                                        r="1.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="sm:text-4xl text-xl mb-3 font-semibold font-mono">
+                        Our special Dishes
+                    </h2>
+                    <p class="text-sm text-gray-700 font-light leading-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus
+                        amet fugiat consequuntur eveniet excepturi nam
+                        perspiciatis ipsam
+                        iure repudiandae minima magni quam mollitia at corporis,
+                        error quo
+                        cum accusantium explicabo.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-12 px-24 bg-[#e1e3e3]">
+            <div class="flex items-center justify-start flex-col lg:flex-row sm:justify-center">
+                <div>
+                    <div>
+                        <h2
+                            class="sm:text-3xl text-xl font-extrabold tracking-wide text-black">
+                            Meet Our Master Chef Team Leader
+                        </h2>
+                        <p
+                            class="text-sm text-gray-500 font-light sm:leading-6  mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Autem
+                            ullam corporis dignissimos possimus quos voluptatem
+                            amet
+                            consectetur adipisicing elit. Autem ullam corporis
+                            dignissimos
+                            possimus quos voluptatem in libero maxime, dolores
+                            minus.
+                            Praesentium, impedit dolorem rem deserunt quaerat
+                            voluptatem
+                            incidunt eum? Minus.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-7 mt-5 ">
+                        <div class="flex items-center gap-6 w-fit">
+                            <div
+                                class="sm:w-24 sm:h-24 w-12 h-12 rounded-full flex items-center justify-center bg-[#407073]">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="30"
+                                    height="30"
+                                    color="#ffffff"
+                                    fill="none">
+                                    <path
+                                        d="M9.10448 17.5C8.33359 16.5723 8.42384 15.1986 8.69771 14.3155C13.1751 16.5 13.7595 12.5 13.4229 11.5C14.9282 12.5 16.3877 15.9189 14.8371 17.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8.81631 17.5C5.5924 16.4286 4.76862 11.5478 6.12929 8.92857C7.12501 11.0714 8.75001 11.0714 8.75001 11.0714C7.66668 6.78571 9.83335 3.57143 14.0108 2.5C13.1918 4.001 12.5366 6.34631 14.197 7.84902C14.5485 7.18039 15.7296 5.71429 17.4167 5.71429C17.4167 5.71429 16.1196 8.01619 17.5273 10.0221C19.152 12.3372 18.736 15.7851 16.3196 17.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M20.5 17.5H3.5L4.1601 19.9851C4.4949 21.2455 4.84122 21.5 6.22165 21.5H17.7783C19.1588 21.5 19.5051 21.2455 19.8399 19.9851L20.5 17.5Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M3.55556 17.5H2.5M20.4444 17.5H21.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="w-80">
+                                <h3
+                                    class="font-semibold text-black sm:text-xl text-lg mb-2">
+                                    Cooking Methods
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Lorem ipsum dolor sit amet consectetuLorem
+                                    ipsum dolor sit
+                                    amet consectetur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 w-fit">
+                            <div
+                                class="sm:w-24 sm:h-24 w-12 h-12  rounded-full flex items-center justify-center bg-[#284245]">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="30"
+                                    height="30"
+                                    color="#ffffff"
+                                    fill="none">
+                                    <path
+                                        d="M12 17C10.3264 17 8.86971 18.265 8.11766 20.1312C7.75846 21.0225 8.27389 22 8.95877 22H15.0412C15.7261 22 16.2415 21.0225 15.8823 20.1312C15.1303 18.265 13.6736 17 12 17Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M18.5 5H19.7022C20.9031 5 21.5035 5 21.8168 5.37736C22.13 5.75472 21.9998 6.32113 21.7393 7.45395L21.3485 9.15307C20.7609 11.7086 18.6109 13.6088 16 14"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5.5 5H4.29779C3.09692 5 2.49649 5 2.18324 5.37736C1.86999 5.75472 2.00024 6.32113 2.26075 7.45395L2.65148 9.15307C3.23914 11.7086 5.38912 13.6088 8 14"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 17C15.0208 17 17.565 12.3379 18.3297 5.99089C18.5412 4.23558 18.647 3.35793 18.0868 2.67896C17.5267 2 16.6223 2 14.8134 2H9.18658C7.37775 2 6.47333 2 5.91317 2.67896C5.35301 3.35793 5.45875 4.23558 5.67025 5.99089C6.435 12.3379 8.97923 17 12 17Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="w-80">
+                                <h3
+                                    class="font-semibold text-black sm:text-xl text-lg mb-2">
+                                    Achievements in Cooking
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Lorem ipsum dolor sit amet consectetuLorem
+                                    ipsum dolor sit
+                                    amet consectetur.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6 w-fit">
+                            <div
+                                class="sm:w-24 sm:h-24 w-12 h-12  rounded-full flex items-center justify-center bg-[#407073]">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="30"
+                                    height="30"
+                                    color="#ffffff"
+                                    fill="none">
+                                    <path
+                                        d="M11.5 22C7.49306 22 5.48959 22 4.2448 20.5355C3 19.0711 3 16.714 3 12C3 7.28596 3 4.92893 4.2448 3.46447C5.48959 2 7.49306 2 11.5 2C15.5069 2 17.5104 2 18.7552 3.46447C19.7572 4.64332 19.9527 6.40054 19.9908 9.5"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M8 8H15M8 13H11"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M19.6092 18.1054C20.4521 17.4918 21 16.4974 21 15.375C21 13.511 19.489 12 17.625 12H17.375C15.511 12 14 13.511 14 15.375C14 16.4974 14.5479 17.4918 15.3908 18.1054M19.6092 18.1054C19.0523 18.5108 18.3666 18.75 17.625 18.75H17.375C16.6334 18.75 15.9477 18.5108 15.3908 18.1054M19.6092 18.1054L20.192 19.9404C20.4143 20.6403 20.5255 20.9903 20.4951 21.2082C20.4318 21.6617 20.0619 21.9984 19.6252 22C19.4154 22.0008 19.101 21.8358 18.4723 21.5059C18.2027 21.3644 18.0679 21.2936 17.93 21.252C17.649 21.1673 17.351 21.1673 17.07 21.252C16.9321 21.2936 16.7973 21.3644 16.5277 21.5059C15.899 21.8358 15.5846 22.0008 15.3748 22C14.9381 21.9984 14.5682 21.6617 14.5049 21.2082C14.4745 20.9903 14.5857 20.6403 14.808 19.9404L15.3908 18.1054"
+                                        stroke="currentColor"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div class="w-80">
+                                <h3
+                                    class="font-semibold text-black sm:text-xl mb-2">
+                                    Certificate Chef
+                                </h3>
+                                <p class="text-sm text-gray-500">
+                                    Lorem ipsum dolor sit amet consectetuLorem
+                                    ipsum dolor sit
+                                    amet consectetur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-60 lg:mt-1 xl:mt-1">
+                    <div
+                        class="bg-[#284245]  relative sm:w-96 sm:h-60 w-52 h-44  lg:top-36 rounded-tl-[50%] rounded-br-[50%]">
+                        <div
+                            class="bg-[#ffffff3c] absolute w-[100%] h-[100%] left-5 backdrop-blur-xl shadow-xl bottom-16 rounded-tl-[50%] rounded-br-[50%] transition-all duration-200 hover:bottom-12">
+                            <img
+                                class="absolute bottom-1 w-96 h-96"
+                                src="./images/Delicious Pizza Creative Photography, Pizza, Pizza Photography, Delicious Pizza PNG Transparent Image and Clipart for Free Download-Photoroom.png"
+                                alt />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-12 sm:px-24 px-10 min-h-[100vh]">
+            <div>
+                <div>
+                    <div class="flex items-end flex-center items-center lg:flex-row flex-col sm:gap-4 gap-2  lg:justify-between">
+                        <div class="">
+                            <h2
+                                class="text-black sm:text-3xl text-xl font-bold tracking-wide">
+                                Our Popular Menu
+                            </h2>
+                            <p class="text-sm text-gray-500 mt-3 tracking-wide">
+                                Lorem ipsum, dolor sit amet consectetur
+                                adipisicing elit.
+                                Repellendus, quasi vitae! amet, incidunt
+                                explicabo!
+                            </p>
+                        </div>
+                        <div class="flex justify-center  items-center sm:gap-5 gap-2">
+                            <span>
+                                <button
+                                    class="py-3 px-3 bg-white rounded-xl shadow-xl shadow-gray-400 transition-all duration-200 hover:shadow-gray-500">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="25"
+                                        height="25"
+                                        color="#000000"
+                                        fill="none">
+                                        <path
+                                            d="M14.8541 4H9.14593C6.6503 4 4.52873 5.68344 3.75294 8.02892C3.49753 8.80111 3.36982 9.18721 3.69065 9.59361C4.01149 10 4.53377 10 5.57833 10H18.4217C19.4662 10 19.9885 10 20.3093 9.59361C20.6302 9.18721 20.5025 8.80111 20.2471 8.02892C19.4713 5.68344 17.3497 4 14.8541 4Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M4 16H3.5C2.67157 16 2 15.3284 2 14.5C2 13.6716 2.67157 13 3.5 13H11.3944C11.7893 13 12.1753 13.1169 12.5038 13.3359L14.4453 14.6302C14.7812 14.8541 15.2188 14.8541 15.5547 14.6302L17.4962 13.3359C17.8247 13.1169 18.2107 13 18.6056 13H20.5C21.3284 13 22 13.6716 22 14.5C22 15.3284 21.3284 16 20.5 16H20M4 16L4.4319 17.7276C4.76578 19.0631 5.96573 20 7.34233 20H16.6577C18.0343 20 19.2342 19.0631 19.5681 17.7276L20 16M4 16H11M20 16H18.5"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15.0078 7L14.9988 7"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M10.5 6.5L9.5 7.5"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>
+                                <button
+                                    class="py-3 px-3 bg-white rounded-xl shadow-lg shadow-gray-400 transition-all duration-200 hover:shadow-gray-500">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="25"
+                                        height="25"
+                                        color="#000000"
+                                        fill="none">
+                                        <path
+                                            d="M7.5 12L8.32693 14.6957C9.82073 19.5652 10.5676 22 12 22C13.4324 22 14.1793 19.5652 15.6731 14.6957L16.5 12"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12 8.66667C12 9.26343 12.1647 9.82357 12.4531 10.3081M12.4531 10.3081C11.7173 11.3298 10.4825 12 9.08333 12C6.82817 12 5 10.2589 5 8.11111C5 6.22776 6.40574 4.6571 8.27244 4.2989C8.91067 2.94384 10.3396 2 12 2C14.0719 2 15.7833 3.46957 16.0479 5.37393M12.4531 10.3081C13.0544 11.3183 14.1936 12 15.5 12C17.433 12 19 10.5076 19 8.66667C19 7.00322 17.7206 5.62436 16.0479 5.37393M15.6904 7.55556C15.9423 7.05041 16.0833 6.48533 16.0833 5.88889C16.0833 5.71431 16.0713 5.54242 16.0479 5.37393"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>
+                                <button
+                                    class="py-3 px-3 bg-white rounded-xl shadow-lg shadow-gray-400 transition-all duration-200 hover:shadow-gray-500">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="25"
+                                        height="25"
+                                        color="#000000"
+                                        fill="none">
+                                        <path
+                                            d="M17 13.2308C17 13.2308 16.0909 12.7693 15.1818 12.7693C13.8182 12.7693 12 14.6154 12 17.3846C12 20.1537 14.4896 22 17 22C19.5104 22 22 20.1537 22 17.3846C22 14.6154 20.1818 12.7693 18.8182 12.7693C17.9091 12.7693 17 13.2308 17 13.2308ZM17 13.2308C17 11.8462 17.9091 10 19.7273 10"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M10.655 5C11.5512 5 12.2778 4.32843 12.2778 3.5C12.2778 2.67157 11.5512 2 10.655 2H5.24561C4.34936 2 3.6228 2.67157 3.6228 3.5C3.6228 4.32843 4.34936 5 5.24561 5M11.1693 4.92311C12.1247 6.68943 12.9095 8.28337 13.3888 10C13.4279 10.1401 13.465 10.281 13.5 10.4229M10.428 22H6.32748C2.74721 22 2 21.3093 2 18V13.7771C2 10.3773 3.09757 7.88562 4.70467 4.91465"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>
+                                <button
+                                    class="py-3 px-3 bg-white rounded-xl shadow-lg shadow-gray-400 transition-all duration-200 hover:shadow-gray-500">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="25"
+                                        height="25"
+                                        color="#000000"
+                                        fill="none">
+                                        <path
+                                            d="M6.63244 18.2626L5.03072 6.09986C4.91063 5.188 5.11589 5 6.12552 5H16.8745C17.8841 5 18.0894 5.188 17.9693 6.09986L16.3676 18.2626C16.1495 19.9182 16.0405 20.746 15.4139 21.2437C14.1165 22.2744 8.827 22.2295 7.58606 21.2437C6.95948 20.746 6.85047 19.9182 6.63244 18.2626Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M13.5 19L13.946 2.94128C13.9771 2.41272 14.4148 2 14.9443 2H19.0014"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path
+                                            d="M6 10C6.18182 9.66667 6.78182 9 8.09091 9C9.72727 9 9.29545 10 10.3864 10C11.4773 10 13.1136 9 14.75 9C16.3864 9 17.5 10 17.5 10"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path
+                                            d="M10.0089 16H10"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </span>
+                            <span>
+                                <button
+                                    class="py-3 px-3 bg-white rounded-xl shadow-lg shadow-gray-400 transition-all duration-200 hover:shadow-gray-500">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="25"
+                                        height="25"
+                                        color="#000000"
+                                        fill="none">
+                                        <path
+                                            d="M10 15.8446L6.68575 19.1589C7.45757 19.7089 7.56154 20.8655 6.88551 21.5416C6.27426 22.1528 5.28323 22.1528 4.67198 21.5416C4.19008 21.0597 4.02512 20.2787 4.30305 19.6969C3.72125 19.9749 2.94033 19.8099 2.45844 19.328C1.84719 18.7168 1.84719 17.7257 2.45844 17.1145C3.13447 16.4385 4.29108 16.5424 4.84114 17.3142L8.15538 14"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12.5368 3.68189C14.8712 1.34751 18.1694 1.53315 20.3181 3.68189C22.033 5.39675 22.4975 7.8437 21.4285 9.94858C19.6533 7.59535 15.6579 9.39829 16.4055 12.3559C14.7572 11.6697 13.3426 13.7886 14.478 15.0632C12.0982 16.0318 9.73049 16.4381 8.64618 15.3538C6.49743 13.2051 10.2024 6.01628 12.5368 3.68189Z"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div
+                            class="flex justify-center flex-wrap items-center gap-5 mt-5 ">
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80  flex  justify-center items-end">
+                                <div
+                                    class="relative  bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72  h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12  justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80 flex justify-center items-end">
+                                <div
+                                    class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72 h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12 justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80 flex justify-center items-end">
+                                <div
+                                    class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72 h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12 justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-start flex-wrap items-start gap-3 mt-3">
+                            <span
+                                class="bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                <a href="#" class><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#ffffff"
+                                        fill="none">
+                                        <path
+                                            d="M3.99982 11.9998L19.9998 11.9998"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.99963 17C8.99963 17 3.99968 13.3176 3.99966 12C3.99965 10.6824 8.99966 7 8.99966 7"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" /></svg></a>
+                            </span>
+
+                            <span
+                                class="bg-[#fcfcfc] py-2 px-4 rounded-md rounded-tl-3xl shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-br-3xl hover:shadow-slate-300 rounded-bl-none">
+                                <a href>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#487073"
+                                        fill="none">
+                                        <path
+                                            d="M20.0001 11.9998L4.00012 11.9998"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class>
+                        <div
+                            class="flex justify-center flex-wrap items-center gap-5 mt-5">
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80 flex justify-center items-end">
+                                <div
+                                    class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72 h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12 justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80 flex justify-center items-end">
+                                <div
+                                    class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72 h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12 justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80 flex justify-center items-end">
+                                <div
+                                    class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72 h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12 justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-start gap-3 mt-3">
+                            <span
+                                class="bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                <a href="#" class><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#ffffff"
+                                        fill="none">
+                                        <path
+                                            d="M3.99982 11.9998L19.9998 11.9998"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.99963 17C8.99963 17 3.99968 13.3176 3.99966 12C3.99965 10.6824 8.99966 7 8.99966 7"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" /></svg></a>
+                            </span>
+
+                            <span
+                                class="bg-[#fcfcfc] py-2 px-4 rounded-md rounded-tl-3xl shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-br-3xl hover:shadow-slate-300 rounded-bl-none">
+                                <a href>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#487073"
+                                        fill="none">
+                                        <path
+                                            d="M20.0001 11.9998L4.00012 11.9998"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class>
+                        <div
+                            class="flex justify-center flex-wrap items-center gap-5 mt-5">
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80 flex justify-center items-end">
+                                <div
+                                    class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72 h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12 justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80 flex justify-center items-end">
+                                <div
+                                    class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72 h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12 justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="py-3 px-3 bg-transparent overflow-hidden h-80 flex justify-center items-end">
+                                <div
+                                    class="relative bg-[#fcfcfc] py-3 px-3 rounded-3xl w-72 h-60 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                    <img
+                                        class="absolute bottom-16 right-18 transition-all duration-200 hover:bottom-14 w-[200px]"
+                                        src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                        alt />
+                                    <div
+                                        class="flex mt-12 justify-center items-end h-40">
+                                        <div>
+                                            <span class="flex">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 24 24"
+                                                    width="24"
+                                                    height="24"
+                                                    color="orange"
+                                                    fill="none">
+                                                    <path
+                                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                                        stroke="currentColor"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                <span class="ml-2">5</span>
+                                            </span>
+                                            <h2
+                                                class="text-md font-bold mt-3">Kidney
+                                                bean curry</h2>
+                                            <span
+                                                class="text-xs text-gray-500">Lorem
+                                                ipsum dolorLorem ipsum dolor
+                                                sit.</span>
+                                            <p
+                                                class="text-black font-bold mt-3">$30.0</p>
+                                        </div>
+                                        <button
+                                            class="relative bottom-40 shadow-lg shadow-slate-600 py-3 px-3 rounded-full bg-gray-400 ml-3 transition-all duration-200 hover:bg-gray-500">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                            </svg>
+                                        </button>
+                                        <a
+                                            href="#"
+                                            class="absolute bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl top-48 right-4 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="24"
+                                                height="24"
+                                                color="#ffffff"
+                                                fill="none">
+                                                <path
+                                                    d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round" />
+                                                <path
+                                                    d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <circle
+                                                    cx="10.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="20.5"
+                                                    r="1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.5" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-start gap-3 mt-3">
+                            <span
+                                class="bg-[#487073] py-2 px-4 rounded-md rounded-tr-3xl shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                <a href="#" class><svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#ffffff"
+                                        fill="none">
+                                        <path
+                                            d="M3.99982 11.9998L19.9998 11.9998"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M8.99963 17C8.99963 17 3.99968 13.3176 3.99966 12C3.99965 10.6824 8.99966 7 8.99966 7"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" /></svg></a>
+                            </span>
+
+                            <span
+                                class="bg-[#fcfcfc] py-2 px-4 rounded-md rounded-tl-3xl shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-br-3xl hover:shadow-slate-300 rounded-bl-none">
+                                <a href>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="24"
+                                        height="24"
+                                        color="#487073"
+                                        fill="none">
+                                        <path
+                                            d="M20.0001 11.9998L4.00012 11.9998"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M15.0003 17C15.0003 17 20.0002 13.3176 20.0002 12C20.0002 10.6824 15.0002 7 15.0002 7"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#cfd2d2] py-5 min-h-[100vh]">
+            <div>
+                <div>
+                    <h1 class="text-center text-3xl font-bold font-mono">
+                        Our Customer's Comments
+                    </h1>
+                </div>
+                <div class="flex justify-center lg:flex-row flex-col items-center ">
+                    <div class="flex-1 mt-60 lg:mt-1">
+                        <div
+                            class="bg-[#284245] relative sm:w-96 sm:h-60 w-52 h-44 lg:left-44 lg:top-52 rounded-tl-[50%] rounded-br-[50%]">
+                            <div
+                                class="bg-[#ffffff3c] absolute w-[100%] h-[100%] left-5 backdrop-blur-xl shadow-xl bottom-16 rounded-tl-[50%] rounded-br-[50%] transition-all duration-200 hover:bottom-12">
+                                <img
+                                    class="absolute bottom-1 w-96 h-96"
+                                    src="./images/Delicious Pizza Creative Photography, Pizza, Pizza Photography, Delicious Pizza PNG Transparent Image and Clipart for Free Download-Photoroom.png"
+                                    alt />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <p class="text-gray-900 font-light leading-7">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Voluptatem accusantium ut architecto sequi soluta
+                            dolores saepe
+                            fugit deleniti? Quidem cum dolores, eum aut minus
+                            voluptatem
+                            deserunt itaque. Harum, laboriosam neque? Lorem,
+                            ipsum dolor sit
+                            amet consectetur adipisicing elit. Dolores
+                            voluptates vero
+                            assumenda quia molestias! Aperiam nulla optio
+                            deserunt et
+                            perspiciatis dicta est veritatis necessitatibus
+                            voluptatibus, odio
+                            totam, id aspernatur nesciunt!
+                        </p>
+
+                        <div class="mt-5 flex justify-between px-3">
+                            <div class="px-4 border-l-2 border-slate-600">
+                                <h3
+                                    class="text-xl font-semibold tracking-wide text-black">
+                                    Hamida Jannat
+                                </h3>
+                                <p class="text-gray-900">Food blogger</p>
+                            </div>
+                            <span class="flex">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#284245"
+                                    fill="none">
+                                    <path
+                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#284245"
+                                    fill="none">
+                                    <path
+                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#284245"
+                                    fill="none">
+                                    <path
+                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#284245"
+                                    fill="none">
+                                    <path
+                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24"
+                                    color="#284245"
+                                    fill="none">
+                                    <path
+                                        d="M13.7276 3.44418L15.4874 6.99288C15.7274 7.48687 16.3673 7.9607 16.9073 8.05143L20.0969 8.58575C22.1367 8.92853 22.6167 10.4206 21.1468 11.8925L18.6671 14.3927C18.2471 14.8161 18.0172 15.6327 18.1471 16.2175L18.8571 19.3125C19.417 21.7623 18.1271 22.71 15.9774 21.4296L12.9877 19.6452C12.4478 19.3226 11.5579 19.3226 11.0079 19.6452L8.01827 21.4296C5.8785 22.71 4.57865 21.7522 5.13859 19.3125L5.84851 16.2175C5.97849 15.6327 5.74852 14.8161 5.32856 14.3927L2.84884 11.8925C1.389 10.4206 1.85895 8.92853 3.89872 8.58575L7.08837 8.05143C7.61831 7.9607 8.25824 7.48687 8.49821 6.99288L10.258 3.44418C11.2179 1.51861 12.7777 1.51861 13.7276 3.44418Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-12 px-24 ">
+            <div class="flex lg:flex-row flex-col items-center lg:justify-evenly gap-x-10">
+                <div>
+                    <div class="mb-4">
+                        <h2
+                            class="text-3xl font-semibold trracking-wide">Recent
+                            News & Updates</h2>
+                    </div>
+                    <div class="mt-10 flex flex-col sm:gap-y-4 gap-y-1   ">
+                        <div
+                            class="flex  justify-center sm:flex-row flex-col items-center gap-20 mt-5">
+                            <div
+                                class="relative flex-2 bg-[#fcfcfc] py-3 px-3 rounded-3xl w-44 h-32 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                <img
+                                    class="absolute bottom-[-80px] left-20 transition-all duration-200  sm:w-[200px] w-[150px]"
+                                    src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                    alt />
+                                <div
+                                    class="flex mt-12 justify-center items-end">
+                                    <span
+                                        href="#"
+                                        class="absolute text-sm font-light w-24 bg-[#487073] py-2 px-3 text-white rounded-md rounded-tr-3xl top-2 right-32 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                        23 jul 2023
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="  flex-1 py-3 px-3">
+                                <h2
+                                    class="text-xl font-semibold text-black tracking-wide">Chill
+                                    out with
+                                    these pizza</h2>
+                                <div
+                                    class="flex justify-between mt-2">
+                                    <span
+                                        class="text-xs font-light">By
+                                        Haseeb Hossion</span>
+                                    <span
+                                        class="text-xs font-light">By
+                                        Haseeb Hossion</span>
+                                </div>
+                                <div class="mt-3">
+                                    <span
+                                        class=" text-sm font-light w-24 bg-[#487073] py-2 px-3 text-white rounded-md rounded-tr-3xl  shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                        see more..
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex  justify-center sm:flex-row flex-col items-center gap-20 sm:mt-5">
+                            <div
+                                class="relative flex-2 bg-[#fcfcfc] py-3 px-3 rounded-3xl w-44 h-32 shadow-sm transition-all duration-200 hover:shadow-lg">
+                                <img
+                                    class="absolute bottom-[-80px] left-20 transition-all duration-200  sm:w-[200px] w-[150px]"
+                                    src="./images/Healthy pork stir-fry with rice noodles and broccolini (2)-Photoroom.png"
+                                    alt />
+                                <div
+                                    class="flex mt-12 justify-center items-end">
+                                    <span
+                                        href="#"
+                                        class="absolute text-sm font-light w-24 bg-[#487073] py-2 px-3 text-white rounded-md rounded-tr-3xl top-2 right-32 shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                        23 jul 2023
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="  flex-1 py-3 px-3">
+                                <h2
+                                    class="text-xl font-semibold text-black tracking-wide">Chill
+                                    out with
+                                    these pizza</h2>
+                                <div
+                                    class="flex justify-between mt-2">
+                                    <span
+                                        class="text-xs font-light">By
+                                        Haseeb Hossion</span>
+                                    <span
+                                        class="text-xs font-light">By
+                                        Haseeb Hossion</span>
+                                </div>
+                                <div class="mt-3">
+                                    <span
+                                        class=" text-sm font-light w-24 bg-[#487073] py-2 px-3 text-white rounded-md rounded-tr-3xl  shadow-lg shadow-slate-400 transition-all duration-200 hover:shadow-xl rounded-bl-3xl hover:shadow-slate-300 rounded-br-none">
+                                        see more..
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="relative">
+                        <img class="sm:h-[500px] h-[300px] rounded-lg relative"
+                            src="./images/cook.jpg"
+                            alt>
+                        <span
+                            class="absolute sm:top-[45%] sm:left-[45%] top-[40%] left-[40%] rounded-full cursor-pointer transition-all duration-200 hover:shadow-lg backdrop-blur-lg bg-[#ffffff20] py-5 px-5">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="28" height="28"
+                                color="#ffffff" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 bg-[#b6bcbc] sm:pt-16 lg:pt-24">
+            <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div
+                    class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-12 gap-y-12 gap-x-8 xl:gap-x-12">
+                    <div class="col-span-2 md:col-span-4 xl:pr-8">
+                        <a href="#" title
+                            class="flex items-center text-3xl font-semibold">
+                            <svg
+                                class="w-auto h-8 lg:h-10"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                                color="#000000"
+                                fill="none">
+                                <path
+                                    d="M18.2505 10.5H19.6403C21.4918 10.5 22.0421 10.7655 21.9975 12.0838C21.9237 14.2674 20.939 16.8047 17 17.5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path
+                                    d="M5.94627 20.6145C2.57185 18.02 2.07468 14.3401 2.00143 10.5001C1.96979 8.8413 2.45126 8.5 4.65919 8.5H15.3408C17.5487 8.5 18.0302 8.8413 17.9986 10.5001C17.9253 14.3401 17.4281 18.02 14.0537 20.6145C13.0934 21.3528 12.2831 21.5 10.9194 21.5H9.08064C7.71686 21.5 6.90658 21.3528 5.94627 20.6145Z"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path
+                                    d="M11.3089 2.5C10.7622 2.83861 10.0012 4 10.0012 5.5M7.53971 4C7.53971 4 7 4.5 7 5.5M14.0012 4C13.7279 4.1693 13.5 5 13.5 5.5"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Foodo
+                        </a>
+
+                        <p
+                            class="text-base leading-relaxed text-gray-600 ">Amet
+                            minim mollit non deserunt ullamco est sit aliqua
+                            dolor do amet sint. Velit officia consequat duis
+                            enim velit mollit.</p>
+                    </div>
+
+                    <div class="lg:col-span-2">
+                        <p
+                            class="text-base font-semibold text-gray-900">Company</p>
+
+                        <ul class="mt-6 space-y-5">
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    About </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Features </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Works </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Career </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-2">
+                        <p
+                            class="text-base font-semibold text-gray-900">Help</p>
+
+                        <ul class="mt-6 space-y-4">
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Customer Support </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Delivery Details </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Terms & Conditions </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-2">
+                        <p
+                            class="text-base font-semibold text-gray-900">Resources</p>
+
+                        <ul class="mt-6 space-y-5">
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Free eBooks </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Development Tutorial </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    How to - Blog </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    YouTube Playlist </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:col-span-2">
+                        <p class="text-base font-semibold text-gray-900">Extra
+                            Links</p>
+
+                        <ul class="mt-6 space-y-5">
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Customer Support </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Delivery Details </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Terms & Conditions </a>
+                            </li>
+
+                            <li>
+                                <a href="#" title
+                                    class="flex text-sm text-gray-800 transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
+                                    Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="mt-16 mb-10 border-gray-200" />
+
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <p class="text-sm text-gray-600">© Copyright 2021, All
+                        Rights Reserved by Postcraft</p>
+
+                    <ul
+                        class="flex items-center mt-5 space-x-3 md:order-3 sm:mt-0">
+                        <li>
+                            <a
+                                href="#"
+                                title
+                                class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600">
+                                <svg class="w-4 h-4"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                title
+                                class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600">
+                                <svg class="w-4 h-4"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                title
+                                class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600">
+                                <svg class="w-4 h-4"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
+                                    <circle cx="16.806" cy="7.207"
+                                        r="1.078"></circle>
+                                    <path
+                                        d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                title
+                                class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600">
+                                <svg class="w-4 h-4"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
